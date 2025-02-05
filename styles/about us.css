@@ -211,7 +211,7 @@ html, body {
   color: #333;
 }
 
-/* Map and Image Container */
+/*map and image*/
 .map-image {
   display: flex;
   justify-content: space-between;
@@ -228,7 +228,7 @@ html, body {
   object-fit: cover;
 }
 
-/* styling image for mobile view */
+
 @media (max-width: 768px) {
   .map-image {
     flex-direction: column;
@@ -252,7 +252,7 @@ table {
   margin: 20px 0;
   font-size: 16px;
   text-align: left;
-  color: #333;
+  color:white;
 }
 
 th, td {
@@ -265,12 +265,9 @@ th {
   color: #fff;
 }
 
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
 
 tr:hover {
-  background-color: #f1f1f1;
+  background-color:#A0ACAD;
 }
 
 /*Footer Style*/

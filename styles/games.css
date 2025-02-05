@@ -1,12 +1,4 @@
-/*Header style*/
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-  }
+
 
 /* Header */
   header {
@@ -192,17 +184,19 @@ body {
   flex-direction: column;
   gap: 50px; 
   padding: 20px;
+  align-items: center;
 }
 
 .games-section > div {
   position: relative;
-  width: 100%;
+  width: 80%; 
+  max-width: 950px; 
 }
 
 
 .games-section h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   color: #048BA8; 
 }
@@ -212,14 +206,18 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 550px; 
+  object-fit: cover; 
   border-radius: 10px; 
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease, border 0.3s ease; 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.8);  
 }
 
 
 .games-section img:hover {
-  transform: scale(1.02); 
+  transform: scale(1.05); 
   filter: brightness(0.7);
+  border: 3px solid #9B97B2; 
 }
 
 .games-section p {
@@ -243,21 +241,30 @@ body {
   opacity: 1; 
 }
 
-@media screen and (max-width: 768px) {
-  .games-section {
-      gap: 30px;
-  }
-
-  .games-section img {
-      width: 100%; 
-      height: auto; 
-  }
-
-  .games-section p {
-      font-size: 0.9rem; 
+@media (max-width: 1024px) {
+  .games-section > div {
+    width: 90%; 
   }
 }
 
+@media (max-width: 768px) {
+  .games-section {
+    gap: 30px;
+  }
+
+  .games-section > div {
+    width: 95%; 
+  }
+
+  .games-section img {
+    max-height: 300px; 
+  }
+
+  .games-section p {
+    font-size: 0.9rem; 
+    padding: 10px;
+  }
+}
 /*Footer Style*/
   footer {
       background-color: #333;
@@ -313,6 +320,7 @@ body {
   }
 
   .contact-section p {
+    color: white;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
