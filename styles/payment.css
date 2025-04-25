@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #07070A; /* black background */
+  color: #f1f1f1; /* light text for contrast */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #2c2c2c; /* subtle grey background */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, legend {
+  color: #e0e0e0; /* light grey text for headings */
+  font-weight: bold;
+}
+
+fieldset {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #444; /* subtle border color */
+  border-radius: 8px;
+  background-color: #3a3a3a; /* dark grey background for sections */
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #A0C1D1; /* subtle border */
+  border-radius: 8px;
+  background-color: #2b2b2b; /* grey input background */
+  color: #f1f1f1; /* light text */
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #119DA4; /* green border on focus */
+  outline: none;
+  background-color: #1f1f1f;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.pay-btn {
+  background-color: #119DA4; /* green button */
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pay-btn:hover {
+  background-color: #2C8C99; /* darker green on hover */
+  transform: scale(1.05);
+}
+
+#order-summary {
+  margin-top: 3rem;
+  background-color: #333; /* darker grey background */
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#order-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #444; /* grey background for table */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#order-summary th,
+#order-summary td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #555; /* subtle border lines */
+  color: #e0e0e0; /* light text */
+}
+
+#order-summary th {
+  background-color: #119DA4; /* green header */
+  color: #fff; /* white text */
+}
+
+#order-summary tfoot td {
+  font-weight: bold;
+  background-color: #2a2a2a; /* darker footer background */
+}
+
+#order-summary tfoot #totalPrice {
+  color: #119DA4; /* green total price */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+      padding: 1rem;
+  }
+
+  input, .pay-btn {
+      font-size: 1rem;
+  }
+
+  #order-summary th, #order-summary td {
+      font-size: 0.9rem; /* smaller text on smaller screens */
+  }
+}
+  
+  

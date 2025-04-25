@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Game Vault
+    </title>
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/Order.css">
+
+    <!--Linking Boxicons-->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="Header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+
+            <!-- Website name and hotmail -->
+            <div class="details">
+                <h1 class="webname">Game Vault</h1>
+                <p class="hotmail">Hotmail 0773905762 / 772305</p>
+            </div>
+
+            <!-- Profile Icon -->
+            <a href="signup.html">
+                <i class="bx bx-user-circle profile-icon"></i>
+            </a>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="About us.html">About Us</a>
+                <a href="Upcoming games.html">Upcoming Games</a>
+                <a href="Gaming products.html">Gaming Products</a>
+                <a href="Games.html">Games</a>
+                <a href="FAQ.html">Queries and FAQ</a>
+                <a href="Community.html">Community</a>
+                <a href="Order.html">Order Now</a>
+                
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main content-->   
+    <main>
+        <h2>Welcome to Our Store</h2>
+
+        <!-- Processors section -->
+        <section id="processors">
+            <h2>Processors</h2>
+
+            <div class="product-grid">
+                
+                <div class="processor">
+                    <img src="images/processoor 1.jpg" alt="processor 1" />
+                    <div class="product-info">
+                        <h4>AMD Ryzen 9 7950X</h4>
+                        <p>LKR 186,500</p>
+                    </div>
+                    <input type="number" data-name="AMD Ryzen 9 7950X" data-price="186,500" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="processor">
+                    <img src="images/processor 2.jpg" alt="processor 2" />
+                    <div class="product-info">
+                        <h4>AMD Ryzen 7 9700X</h4>
+                        <p>LKR 125,000</p>
+                    </div>
+                    <input type="number" data-name="AMD Ryzen 7 9700X" data-price="125,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="processor">
+                    <img src="images/processor 3.avif" alt="processor 3" />
+                    <div class="product-info">
+                        <h4> Intel Core i9-13900K</h4>
+                        <p> LKR 215,000 </p>
+                    </div>
+                    <input type="number" data-name=" Intel Core i9-13900K" data-price="215,000 " min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="processor">
+                    <img src="images/processor 4.jpg" alt="processor 4" />
+                    <div class="product-info">
+                        <h4>Intel Core i7-13700K</h4>
+                        <p>LKR 147,500</p>
+                    </div>
+                    <input type="number" data-name="Intel Core i7-13700K" data-price="147,500" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="processor">
+                    <img src="images/processor 5.jpg" alt="processor 5" />
+                    <div class="product-info">
+                        <h4> Intel Core i5-13400F</h4>
+                        <p>LKR 73,500</p>
+                    </div>
+                    <input type="number" data-name=" Intel Core i5-13400F" data-price="73,500" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="processor">
+                    <img src="images/processor 6.jpg" alt="processor 6" />
+                    <div class="product-info">
+                        <h4>Intel Core i7-10700K</h4>
+                        <p>LKR 84,500 </p>
+                    </div>
+                    <input type="number" data-name="Intel Core i7-10700K" data-price="84,500 " min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Graphics Cards Section -->
+        <section id="graphics-cards">
+            <h2>Graphic Cards</h2>
+
+            <div class="product-grid">
+              
+                <div class="G-card">
+                    <img src="images/g-card 1.jpg" alt="Card-1"/>
+                    <div class="product-info">
+                        <h4>NVIDIA GeForce RTX 4090</h4>
+                        <p>LKR 659,000</p>
+                    </div>
+                    <input type="number" data-name="NVIDIA GeForce RTX 4090" data-price="659,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="G-card">
+                    <img src="images/g-card 2.jpg" alt="Card-2" />
+                    <div class="product-info">
+                        <h4>NVIDIA GeForce RTX 4080 Super</h4>
+                        <p>LKR 570,000</p>
+                    </div>
+                    <input type="number" data-name="NVIDIA GeForce RTX 4080 Super" data-price="570,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="G-card">
+                    <img src="images/g-card 3.jpg" alt="Card-3" />
+                    <div class="product-info">
+                        <h4>NVIDIA GeForce RTX 4060 Ti</h4>
+                        <p>LKR 169,000</p>
+                    </div>
+                    <input type="number" data-name="NVIDIA GeForce RTX 4060 Ti" data-price="169,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="G-card">
+                    <img src="images/g-card 4.jpg" alt="Card-4" />
+                    <div class="product-info">
+                        <h4>NVIDIA GeForce RTX 3060</h4>
+                        <p>LKR 114,000</p>
+                    </div>
+                    <input type="number" data-name="NVIDIA GeForce RTX 3060" data-price="114,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="G-card">
+                    <img src="images/g-card 5.jpg" alt="Card-5" />
+                    <div class="product-info">
+                        <h4>AMD Radeon RX 7900 XT</h4>
+                        <p>LKR 449,000</p>
+                    </div>
+                    <input type="number" data-name="AMD Radeon RX 7900 XT" data-price="449,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="G-card">
+                    <img src="images/g-acrd 6.jpg" alt="Card-6" />
+                    <div class="product-info">
+                        <h4>Intel Arc A770</h4>
+                        <p>LKR 140,000</p>
+                    </div>
+                    <input type="number" data-name="Intel Arc A770" data-price="135,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--  Motherboards section -->
+        <section id="motherboards">
+            <h2>Motherboards</h2>
+
+            <div class="product-grid">
+                <div class="M-board">
+                    <img src="images/m-board 1.png" alt="Board-1" /> <!-- ✅ Image outside -->
+                    <div class="product-info">
+                        <h4>MSI PRO B760M-P DDR5</h4> 
+                        <p>LKR 51,000</p>
+                    </div>
+                    <input type="number" data-name="MSI PRO B760M-P DDR5" data-price="51000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="M-board">
+                    <img src="images/m-board 2.jpg" alt="Board-2" />
+                    <div class="product-info">
+                        <h4>ASUS TUF GAMING B760M-PLUS WIFI DDR5</h4>
+                        <p>LKR 74,500</p>
+                    </div>
+                    <input type="number" data-name="ASUS TUF GAMING B760M-PLUS WIFI DDR5" data-price="74,500" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="M-board">
+                    <img src="images/m-board 3.jpg" alt="Board-3" />
+                    <div class="product-info">
+                        <h4>MSI MPG Z790 CARBON WIFI DDR5</h4>
+                        <p>LKR 175,000</p>
+                    </div>
+                    <input type="number" data-name="MSI MPG Z790 CARBON WIFI DDR5" data-price="175,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="M-board">
+                    <img src="images/m-board 4.jpg" alt="Board-4"/>
+                    <div class="product-info">
+                        <h4>ASUS PRIME H610M-K R2.0</h4>
+                        <p>LKR 32,800</p>
+                    </div>
+                    <input type="number" data-name="ASUS PRIME H610M-K R2.0" data-price="32,800" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="M-board">
+                    <img src="images/m-board 5.png" alt="Board-5" />
+                    <div class="product-info">
+                        <h4>MSI A520M-A PRO</h4>
+                        <p>LKR 24,500</p>
+                    </div>
+                    <input type="number" data-name="MSI A520M-A PRO" data-price="24,500" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="M-board">
+                    <img src="images/m-board 6.jpg" alt="Board-6" />
+                    <div class="product-info">
+                        <h4>GIGABYTE B650M D3HP AX (Wi-Fi)</h4>
+                        <p>LKR 56,500</p>
+                    </div>
+                    <input type="number" data-name="GIGABYTE B650M D3HP AX (Wi-Fi)" data-price="56,500" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--  RAM section -->
+        <section id="ram-section">
+            <h2>Memory - RAM</h2>
+
+            <div class="product-grid">
+                <div class="ram">
+                    <img src="images/ram 1.jpg" alt="ram-1" />
+                    <div class="product-info">
+                        <h4>Kingston DDR4 8GB 3200MHz</h4>
+                        <p>LKR 7,900</p>
+                    </div>
+                    <input type="number" data-name="Kingston DDR4 8GB 3200MHz" data-price="7,900" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="ram">
+                    <img src="images/ram 2.png" alt="ram-2" />
+                    <div class="product-info">
+                        <h4>Redragon 16GB DDR4 3200MHz</h4>
+                        <p>LKR 14,499</p>
+                    </div>
+                    <input type="number" data-name="Redragon 16GB DDR4 3200MHz" data-price="14,499" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="ram">
+                    <img src="images/ram 3.jpg" alt="ram-3" />
+                    <div class="product-info">
+                        <h4>Samsung 8GB DDR4 2133MHz Laptop RAM</h4>
+                        <p>LKR 13,995</p>
+                    </div>
+                    <input type="number" data-name="Samsung 8GB DDR4 2133MHz Laptop RAM" data-price="13,995" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="ram">
+                    <img src="images/ram 4.jpg" alt="ram-4" />
+                    <div class="product-info">
+                        <h4>Corsair Vengeance LPX 32GB DDR5 5600MHz</h4>
+                        <p>LKR 31,000</p>
+                    </div>
+                    <input type="number" data-name="Corsair Vengeance LPX 32GB DDR5 5600MHz" data-price="31,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="ram">
+                    <img src="images/ram 5.jpg" alt="ram-5" />
+                    <div class="product-info">
+                        <h4>Patriot Viper Venom DDR5 16GB 5600MHz</h4>
+                        <p>LKR 17,500</p>
+                    </div>
+                    <input type="number" data-name="Patriot Viper Venom DDR5 16GB 5600MHz" data-price="17,500" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="ram">
+                    <img src="images/ram 6.jpg" alt="ram-6" />
+                    <div class="product-info">
+                        <h4>Patriot Signature Line DDR5 16GB 5600MHz Laptop RAM</h4>
+                        <p>LKR 17,900</p>
+                    </div>
+                    <input type="number" data-name="Patriot Signature Line DDR5 16GB 5600MHz Laptop RAM" data-price="17,900" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Storage section -->
+        <section id="storage-devices">
+            <h2>Storage Devices</h2>
+
+            <div class="product-grid">
+                <div class="storage">
+                    <img src="images/sd 1.jpg" alt="storage-1" />
+                    <div class="product-info">
+                        <h4>Samsung 970 EVO Plus 500GB NVMe M.2 SSD</h4>
+                        <p>LKR 29,000</p>
+                    </div>
+                    <input type="number" data-name="Samsung 970 EVO Plus 500GB NVMe M.2 SSD" data-price="29,000" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="storage">
+                    <img src="images/sd 2.jpg" alt="storage-2" />
+                    <div class="product-info">
+                        <h4>Adata SU800 512GB 2.5” SATA SSD</h4>
+                        <p>LKR 16,500</p>
+                    </div>
+                    <input type="number" data-name="Adata SU800 512GB 2.5” SATA SSD" data-price="16,500" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="storage">
+                    <img src="images/sd 3.jpg" alt="storage-3" />
+                    <div class="product-info">
+                        <h4>Seagate One Touch 1TB External Hard Drive</h4>
+                        <p>LKR 22,990</p>
+                    </div>
+                    <input type="number" data-name="Seagate One Touch 1TB External Hard Drive" data-price="22,990" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="storage">
+                    <img src="images/sd 4.jpg" alt="storage-4" />
+                    <div class="product-info">
+                        <h4>Kingston DataTraveler Exodia 64GB USB Flash Drive</h4>
+                        <p>LKR 1,800</p>
+                    </div>
+                    <input type="number" data-name="Kingston DataTraveler Exodia 64GB USB Flash Drive" data-price="1,800" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="storage">
+                    <img src="images/sd 5.avif" alt="storage-5" />
+                    <div class="product-info">
+                        <h4>ADATA UV128 64GB USB Flash Drive</h4>
+                        <p>LKR 2,990</p>
+                    </div>
+                    <input type="number" data-name="ADATA UV128 64GB USB Flash Drive" data-price="2,990" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+                <div class="storage">
+                    <img src="images/sd 6.jpg" alt="storage-6" />
+                    <div class="product-info">
+                        <h4>SanDisk Ultra Flair 64GB USB 3.0 Flash Drive</h4>
+                        <p>LKR 4,740</p>
+                    </div>
+                    <input type="number" data-name="SanDisk Ultra Flair 64GB USB 3.0 Flash Drive" data-price="4,740" min="0" placeholder="Qty" />
+                    <div class="card-buttons">
+                        <button type="button" onclick="addToCart(this)">Add to Cart</button>
+                        <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Extra functions -->
+        <div class="button-section">
+            <button type="button" onclick="applyFavourites()">Apply Favourites</button>
+            <button type="button" onclick="removeFavourites()">Remove Favourites</button>
+        </div>
+
+        <!-- Order-->
+           <section id="order-summary">
+                <h2>Order Summary</h2>
+            
+                <table>
+                <thead>
+                    <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price (LKR)</th>
+                    </tr>
+                </thead>
+                <tbody id="orderTableBody"></tbody>
+                <tfoot>
+                    <tr>
+                    <td colspan="2"><strong>Total</strong></td>
+                    <td id="totalPrice">0</td>
+                    </tr>
+                </tfoot>
+                </table>
+            
+                <div class="order-buttons">
+                    <!-- Give the link an ID so we can hook into it -->
+                    <a href="Payment.html" class="button" id="buyNowBtn">Buy Now</a>
+                    <button class="button clear-btn" onclick="clearOrder()">Clear Order</button>
+                </div>
+          </section>
+  </main>
+
+    <!--Footer-->
+    <footer>
+        <!--Socil media icons-->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/gamestores_sa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://youtu.be/swSfyAOFPeQ?si=SWypyuK7246P_ONL">
+                <i class='bx bxl-youtube' ></i>
+            </a>
+            <a href="https://web.facebook.com/www.gamestreet.lk/?_rdc=1&_rdr#">
+                <i class='bx bxl-facebook' ></i>
+            </a>
+        </div>
+
+        <!--Logo and name-->
+        <div class="logo-footer">
+            <img src="images/logo.png" alt="footer-logo" class="footer-logo">
+            <h1>Game Vault</h1>
+        </div>
+
+        <!--Contact section-->
+        <div class="contact-section">
+            <p>Contact us</p>
+            <div class="contact-info">
+                <i class="bx bxs-map"></i> 
+                <span>#100, Galle Road, Bambalapitiya</span>
+            </div>
+
+            <div class="contact-info">
+                <i class="bx bxs-phone"></i>
+                <span>+94 77 261 3 062 | +94 77 261 3 063</span>
+            </div>
+
+            <div class="contact-info">
+                <i class="bx bxs-envelope"></i>
+                <span>gamevault@gmail.com</span>  
+            </div>
+        </div>
+
+        <div class="footer-message">
+            <p> All Rights Reserved © 2024 Game vault | Designed & Developed By - universe Software Solutions</p>
+        </div>
+    </footer>
+  
+    <!--Javascript For Hamburger-->
+    <script src="script/script.js"></script>  
+    <script src="script/Order.js"></script>
+</body>
+</html>

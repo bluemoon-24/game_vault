@@ -18,7 +18,7 @@
     width: 100px;
     height: 100px;
     border-radius: 7px;
-  }
+  }   
 
   .details {
     text-align: center;
@@ -171,170 +171,227 @@
   }
 
 /* Main content*/
+/* Base */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #000; 
-
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
 }
 
+/* Container */
+.community-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Headings */
 .community-details h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: #119DA4;
   text-align: center;
-  color:#119DA4;
-  padding: 20px;
-  margin: 20px auto;
-  
 }
 
+.community-details p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa;
+}
 
+/* Table */
 .table-section table {
-  width: 80%; 
-  margin: 20px auto; 
+  width: 90%;
+  margin: 30px auto;
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #ddd;
   border-collapse: collapse;
-  font-size: 1rem; 
-  color: white;
-  background-color:black;
-  text-align: left;
-  border-radius: 10px; 
-  overflow: hidden; 
 }
-
 
 .table-section th,
 .table-section td {
-  padding: 10px;
-  border: 1px solid #555;
-  text-transform: uppercase; 
-  transition: color 0.3s ease;
+  padding: 14px;
+  border-bottom: 1px solid #333;
+  text-align: left;
 }
 
-.table-section tbody td {
-  text-transform: lowercase; 
+.table-section th {
+  background-color: #222;
+  text-transform: uppercase;
+  color: #119DA4;
 }
-
 
 .table-section td:hover {
-  color:black;
-  background-color: whitesmoke; 
+  background-color: #222;
+  color: #fff;
 }
 
+/* Button */
+.info-btn {
+  padding: 8px 12px;
+  background-color: #119DA4;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.info-btn:hover {
+  background-color: #0b7a82;
+}
+
+/* Benefits */
 .benefits h1 {
+  color: #fff;
   font-size: 2rem;
-  margin-bottom: 15px;
-  text-align:left;
-  color:white;
+  margin: 40px 0 20px;
 }
 
 .benefits ul {
-  list-style-type: disc;
-  padding: 20px 40px;
-  color: #fff;
-  line-height: 1.8;
+  color: #ccc;
+  list-style: none;
+  padding-left: 0;
 }
 
-
-.com-pics {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-top: 30px;
+.benefits li {
+  background: #1a1a1a;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border-left: 5px solid #119DA4;
 }
 
-.person {
-  flex: 1;
-  background-color: #333; 
-  color: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
-}
-
-
-.person:hover {
-  transform: scale(1.05); 
-}
-
-.person-image {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.person-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-
-.person-image:hover img {
-  transform: scale(1.1); 
-  filter: brightness(0.7); 
-}
-
-.person-image .overlay-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
+/* Testimonials */
+.com-quotes {
+  margin-top: 60px;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
-.person-image:hover .overlay-text {
-  opacity: 1; 
+.com-quotes h1 {
+  color: #119DA4;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-.person-content p {
-  margin-top: 15px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color:white;
+.testimonial-slider {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+.testimonial-slider p{
+  color: whitesmoke;
 }
 
+.testimonial {
+  display: none;
+  font-size: 1.1rem;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: opacity 0.5s ease;
+}
 
+.testimonial.active {
+  display: block;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #119DA4;
+}
+.testimonial img {
+  width: 100%;
+  height: auto; /* Maintain natural image height */
+  object-fit: contain; /* Ensures full image is visible */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #111; /* Optional: prevents awkward spacing on transparent images */
+  display: block;
+}
+
+/* Discount Banner */
 .discount {
   text-align: center;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  color:#048BA8;
+  font-size: 1.3rem;
+  margin-top: 40px;
+  color: #119DA4;
   font-weight: bold;
+  padding: 10px;
+  border-top: 1px solid #222;
 }
 
+/* Modal Popup */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+}
 
+.modal-content {
+  background: #1c1c1c;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  color: #fff;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
 
-/* Responsive Design */
+.modal .close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.modal .close:hover {
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
 @media screen and (max-width: 768px) {
-  .com-pics {
-      flex-direction: column; 
-  }
-
-  .person {
-      margin-bottom: 20px; 
-  }
-
-  .person-image img {
-      width: 100%; 
-      height: auto;
+  .community-details h1 {
+    font-size: 2rem;
   }
 
   .table-section table {
-    width: 100%; 
-    font-size: 0.9rem; 
+    width: 100%;
+    font-size: 0.9rem;
   }
 
-  .table-section th,
-  .table-section td {
-      padding: 8px; 
+  .benefits h1,
+  .discount {
+    font-size: 1.5rem;
+  }
+
+  .testimonial {
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    width: 90%;
   }
 }
 

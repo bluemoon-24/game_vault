@@ -62,22 +62,21 @@
 
   .nav-links {
     display: flex;
-    gap: 15px;
     justify-content: space-between; 
     width: 100%; 
   }
 
   .nav-links a {
     text-decoration: none;
-    color: #000;
+    color:black;
     font-size: 17px;
     padding: 10px;
   }
 
   .nav-links a:hover {
-    color:white;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    color:black;
+    background-color:white ;
+    border-radius: 4px;
   }
 
 /* Hamburger Menu */
@@ -174,149 +173,277 @@
     }
   }
 
+/* Base */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  box-sizing: border-box;
+}
 
-/* Main container styling */
-  main {
-    width: 100vw;
-    margin: 0 auto;
-    padding: 15px;
-    margin: 0;
-    background-color: #000;
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.hero-overlay h1:hover {
+  color: lightcyan;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin: 0 0 20px;
+  color: lightcyan;
+}
+
+.hero-overlay .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #119DA4;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-overlay .btn:hover {
+  background-color: #0d7c84;
+}
+.intro-section p{
+  color: white;
+}
+
+/* General Sections */
+.intro-section,
+.features-section,
+.promo-section,
+.steps-section,
+.community-section,
+.categories-section,
+.testimonial-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.intro-section h2,
+.features-section h2,
+.promo-section h2,
+.steps-section h2,
+.community-section h2,
+.categories-section h2,
+.testimonial-section h2 {
+  color: #119DA4;
+  margin-bottom: 20px;
+}
+
+.intro-section p,
+.promo-section ul,
+.community-section p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 30px auto 0;
+}
+
+.feature {
+  background-color: #222;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #119DA4;
+  transition: transform 0.3s ease;
+}
+
+.feature i {
+  font-size: 40px;
+  color: #119DA4;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.feature p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+/* Category Section */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #119DA4;
+  transition: transform 0.3s ease;
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 6px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  color: white;
+  margin-top: 10px;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+/* Promotions */
+.promo-section ul {
+  list-style-type: "🎮 ";
+  padding-left: 0;
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #f1f1f1;
+}
+
+.promo-section .btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.promo-section .btn.secondary {
+  padding: 10px 20px;
+  background-color: #048BA8;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.promo-section .btn.secondary:hover {
+  background-color: #03677e;
+}
+
+/* Testimonials */
+.testimonial-slider {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  color: #eee;
+  background-color: #1a1a1a;
+  border: 1px solid #119DA4;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Shopping Steps */
+.steps-section ol {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 20px;
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+.steps-section ol li {
+  margin-bottom: 15px;
+}
+
+/* Community CTA */
+.community-section .btn {
+  padding: 12px 25px;
+  background-color: #048BA8;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.community-section{
+  color: white;
+}
+.community-section .btn:hover {
+  background-color: #03677e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2rem;
   }
 
-  .main-content p{
-    color:white;
+  .hero-overlay p {
+    font-size: 1rem;
+    
   }
 
-  .all-content p{
-    color: #fff;
+  .features-grid,
+  .categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 
-  .subheading-2-part ul{
-    border-radius: 10px;
-    padding-bottom:1%;
-    padding-top:2%;
-  }
-
-  .subheading-3-part ol{
-    border-radius:10px;
-    padding-bottom:1%;
-    padding-top:2%;
-  }
-
-  .all-content h1{
-    text-align: center;
-    display: inline-block;  /* Box fits to the size of the content */
-    border: 2px solid #A0ACAD;  
-    color:#A0ACAD;                
-    padding: 10px;            
-    font-size: 24px;            
-    border-radius: 8px;       
-    background-color:black;  
-  }
-
-  .subheading-2-part ul{
-    color:black;
-    background-color:#A0ACAD;
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
- 
-  .subheading-3-part ol{
-    color: #000;
-    background-color:#A0ACAD;
-    box-sizing: border-box;
-  }
-
-  .hero-image {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .hero-image:hover .overlay-text {
-    opacity: 1;
-  }
-
-/* Main Content Section */
-  .main-content, 
-  .subheading-1-part, 
-  .subheading-2-part, 
-  .subheading-3-part {
-    margin-bottom: 30px; 
-    margin: 20px;
-    padding: 0 30px; 
-    background: none; 
-    box-shadow: none; 
-    border-radius: 0; 
-  }
-
-/* Headings */
-  h1 {
-    margin: 0 0 10px;
-    font-size: 24px;
-  }
-
-  p {
-    margin: 0 0 15px;
-    line-height: 1.5;
-  }
-
-  ul, ol {
-    margin-left: 20px;
-  }
-
-  ul li, ol li {
-    margin-bottom: 10px;
-  }
-
-/* Mobile View */
-@media (max-width: 768px){
-  main {
-    width: 100vw;
-    margin: 0 auto;
-    padding: 15px;
-    margin: 0;
-  }
-
-  h1 {
-    margin: 0 0 10px;
-    font-size: 18px;
-  }
-  
-  p {
-    margin: 0 0 15px;
-    line-height: 1.5;
-    font-size: 15px;
-  }
-  
-  ul, ol {
-    margin-left: 20px
-  }
-  
-  ul li, ol li {
-    font-size: 15px;
-    margin-bottom: 10px;
+  .promo-section ul,
+  .steps-section ol {
+    font-size: 1rem;
+    padding-left: 15px;
   }
 }
 

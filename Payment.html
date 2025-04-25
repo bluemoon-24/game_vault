@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Game Vault 
+    </title>
+    
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script/payment.js"></script>
+
+</head>
+<body>
+    
+        <main class="container">
+          <h1 class="checkout-title">Checkout</h1>
+
+          <!-- Order Summary Table -->
+    <section id="order-summary">
+      <h2>Your Order Summary</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Item</th>
+                  <th>Quantity</th>
+                  <th>Price (LKR)</th>
+              </tr>
+          </thead>
+          <tbody id="orderTableBody"></tbody>
+          <tfoot>
+              <tr>
+                  <td colspan="2"><strong>Total</strong></td>
+                  <td id="totalPrice">0</td>
+              </tr>
+          </tfoot>
+      </table>
+  </section>
+      
+          <form id="paymentForm">
+            <!-- Personal Details -->
+                <fieldset>
+                <legend>Personal Details</legend>
+                <input type="text" id="name" placeholder="Full Name" required />
+                <input type="email" id="email" placeholder="Email Address" required />
+                </fieldset>
+        
+                <!-- Delivery Details -->
+                <fieldset>
+                <legend>Delivery Address</legend>
+                <input type="text" id="address" placeholder="Street Address" required />
+                <input type="text" id="city" placeholder="City" required />
+                <input type="text" id="zip" placeholder="Postal Code" required />
+                </fieldset>
+        
+                <!-- Payment Information -->
+                <fieldset>
+                <legend>Payment Details</legend>
+                <input type="text" id="cardName" placeholder="Name on Card" required />
+                <input type="text" id="cardNumber" placeholder="Card Number" required />
+                <input type="text" id="expiry" placeholder="MM/YY" required />
+                <input type="password" id="cvv" placeholder="CVV" required />
+                </fieldset>
+        
+                <div class="btn-wrapper">
+                <button type="submit" class="pay-btn">Pay</button>
+                </div>
+          </form>
+        </main>
+    
+    
+</body>
+</html>
