@@ -1,10 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap');
 
+:root {
+  --primary: #7C3AED;
+  --primary-glow: rgba(124, 58, 237, 0.4);
+  --secondary: #A855F7;
+  --bg-deep: #030014;
+  --bg-dark: #090919;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-border: rgba(255, 255, 255, 0.1);
+  --accent: #FACC15;
+  --text-main: #FFFFFF;
+  --text-dim: #A1A1AA;
+  --glass: blur(12px);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -12,43 +27,64 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: gray;
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  padding: 20px;
 }
 
 .wrapper {
-  width: 420px;
-  background-color: black;
-  color: #fff;
-  border-radius: 10px;
-  padding: 30px 40px;
+  width: 450px;
+  background: var(--surface);
+  backdrop-filter: var(--glass);
+  -webkit-backdrop-filter: var(--glass);
+  color: var(--text-main);
+  border-radius: 32px;
+  padding: 60px 50px;
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
 }
 
 /* Shared heading */
 .wrapper h1 {
-  font-size: 36px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 32px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #fff 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Input boxes */
 .input-box {
   position: relative;
   width: 100%;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .input-box input {
   width: 100%;
-  padding: 20px 45px 20px 20px;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
-  color: #fff;
+  padding: 16px 50px 16px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  color: var(--text-main);
   font-size: 16px;
+  transition: var(--transition);
+}
+
+.input-box input:focus {
+  border-color: var(--primary);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 15px var(--primary-glow);
 }
 
 .input-box input::placeholder {
-  color: #ccc;
+  color: var(--text-dim);
 }
 
 .input-box i {
@@ -57,66 +93,75 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
-  color: #fff;
+  color: var(--primary);
 }
 
 /* Remember / Forgot */
 .remember-forgot {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
-  margin: 10px 0 20px;
+  font-size: 13px;
+  margin: 15px 0 30px;
+  color: var(--text-dim);
 }
 
 .remember-forgot label input {
-  margin-right: 5px;
-  accent-color: #fff;
+  margin-right: 8px;
+  accent-color: var(--primary);
 }
 
 .remember-forgot a {
-  color: #fff;
+  color: var(--text-dim);
   text-decoration: none;
+  transition: var(--transition);
 }
 
 .remember-forgot a:hover {
-  text-decoration: underline;
+  color: var(--primary);
 }
 
 /* Buttons */
 .btn {
   width: 100%;
-  padding: 15px;
-  margin: 15px 0;
-  background-color: #fff;
-  color: #333;
+  padding: 16px;
+  margin: 20px 0;
+  background: var(--primary);
+  color: #fff;
   border: none;
-  border-radius: 40px;
-  font-size: 16px;
-  font-weight: 600;
+  border-radius: 12px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: var(--transition);
+  box-shadow: 0 8px 25px var(--primary-glow);
 }
 
 .btn:hover {
-  background-color: gray;
-  color: #fff;
+  background: var(--secondary);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px var(--primary-glow);
 }
 
 /* Register link */
 .register-link {
   text-align: center;
-  margin-top: 10px;
-  font-size: 14px;
+  margin-top: 25px;
+  font-size: 13px;
+  color: var(--text-dim);
 }
 
 .register-link a {
-  color: #fff;
-  font-weight: 600;
+  color: var(--primary);
+  font-weight: 700;
   text-decoration: none;
+  transition: var(--transition);
 }
 
 .register-link a:hover {
-  text-decoration: underline;
+  text-shadow: 0 0 10px var(--primary-glow);
 }
 
 /* Section visibility */
@@ -138,10 +183,24 @@ body {
 }
 
 #welcomeSection h2 {
+  font-family: 'Orbitron', sans-serif;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
 #welcomeSection .btn {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+#logoutBtn {
+  background: transparent !important;
+  border: 1px solid var(--surface-border);
+  box-shadow: none;
+  color: var(--text-dim) !important;
+}
+
+#logoutBtn:hover {
+  border-color: #ef4444;
+  color: #ef4444 !important;
 }

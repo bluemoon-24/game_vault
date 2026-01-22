@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>
-            Game Vault
-        </title>
-        
-        <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
-        <link rel="stylesheet" href="styles/Community.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+        Game Vault
+    </title>
+
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/Community.css">
 
     <!--Linking boxicons-->
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 
-   
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -36,8 +41,8 @@
             </a>
         </div>
 
-         <!-- Navigation Bar -->
-         <div class="navbar">
+        <!-- Navigation Bar -->
+        <div class="navbar">
             <div class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
                 <a href="About us.html">About Us</a>
@@ -62,133 +67,135 @@
 
     <!-- Main Content -->
     <div class="community-section">
-        <div class="community-details">
+        <div class="community-details" data-aos="fade-up">
             <h1>Join our Game Vault Community</h1>
             <p>Stay updated on our global tournaments, local meetups, and special events.</p>
         </div>
-    
-        <div class="table-section">
-        <table>
-            <thead>
-            <tr>
-                <th>Event</th>
-                <th>Date</th>
-                <th>Location</th>
-                <th>More Info</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Vaultcon</td>
-                <td>4th Feb</td>
-                <td>Virtual</td>
-                <td><button class="info-btn" data-event="Vaultcon">Details</button></td>
-            </tr>
-            <tr>
-                <td>Fortnite Showdown</td>
-                <td>20th Nov</td>
-                <td>Universe Stadium</td>
-                <td><button class="info-btn" data-event="Fortnite Showdown">Details</button></td>
-            </tr>
-            <tr>
-                <td>Community Meetup</td>
-                <td>6th Jun</td>
-                <td>Liberty Plaza</td>
-                <td><button class="info-btn" data-event="Community Meetup">Details</button></td>
-            </tr>
-            </tbody>
-        </table>
+
+        <div class="table-section" data-aos="fade-up" data-aos-delay="100">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>More Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vaultcon</td>
+                        <td>4th Feb</td>
+                        <td>Virtual</td>
+                        <td><button class="info-btn" data-event="Vaultcon">Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>Fortnite Showdown</td>
+                        <td>20th Nov</td>
+                        <td>Universe Stadium</td>
+                        <td><button class="info-btn" data-event="Fortnite Showdown">Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>Community Meetup</td>
+                        <td>6th Jun</td>
+                        <td>Liberty Plaza</td>
+                        <td><button class="info-btn" data-event="Community Meetup">Details</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    
-        <div class="benefits">
-        <h1>Why Join Us?</h1>
-        <ul>
-            <li>🎮 Sneak peeks at upcoming games</li>
-            <li>🤝 Meet fellow gamers & streamers</li>
-            <li>💰 Discounts & early bird passes</li>
-            <li>🏆 Participate in tournaments & win</li>
-        </ul>
+
+        <div class="benefits" data-aos="fade-up">
+            <h1>Why Join Us?</h1>
+            <ul>
+                <li>🎮 Sneak peeks at upcoming games</li>
+                <li>🤝 Meet fellow gamers & streamers</li>
+                <li>💰 Discounts & early bird passes</li>
+                <li>🏆 Participate in tournaments & win</li>
+            </ul>
         </div>
-    
-        <div class="com-quotes">
-        <h1>What Our Members Say</h1>
-        <div class="testimonial-slider">
-            <div class="testimonial active">
-                <img src="images/steve kalahan 2.jpg" alt="Steve Kalahan">
-                <p>"Game Vault events are top-notch. I’ve made lifelong friends and discovered so many new titles!"</p>
-                <span>- Steve Kalahan</span>
+
+        <div class="com-quotes" data-aos="fade-up">
+            <h1>What Our Members Say</h1>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <img src="images/steve kalahan 2.jpg" alt="Steve Kalahan">
+                    <p>"Game Vault events are top-notch. I’ve made lifelong friends and discovered so many new titles!"
+                    </p>
+                    <span>- Steve Kalahan</span>
+                </div>
+                <div class="testimonial">
+                    <img src="images/Sandra park 2.jpeg" alt="Sandra Park">
+                    <p>"The best gaming community! It's more than games—it's home."</p>
+                    <span>- Sandra Park</span>
+                </div>
             </div>
-            <div class="testimonial">
-                <img src="images/Sandra park 2.jpeg" alt="Sandra Park">
-                <p>"The best gaming community! It's more than games—it's home."</p>
-                <span>- Sandra Park</span>
-            </div>
         </div>
-        </div>
-    
+
         <p class="discount"> Sign up now and get 10% off your first purchase!</p>
-    
+
         <!-- Modal -->
         <div id="eventModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modalTitle">Event Details</h2>
-            <p id="modalDescription"></p>
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Event Details</h2>
+                <p id="modalDescription"></p>
+            </div>
         </div>
-        </div>
-  </div>
-  
-  <script>
-    const eventDetails = {
-      "Vaultcon": "A global digital gathering for gamers, streamers, and developers worldwide. Includes competitions, panels, and early game demos.",
-      "Fortnite Showdown": "A stadium showdown for Fortnite fans. Battle royale teams face off in a day-long LAN event with live commentary and prizes.",
-      "Community Meetup": "Meet and greet event at Liberty Plaza. Chill, game, and vibe with the community. Merch giveaways and surprise announcements await!"
-    };
-  
-    const buttons = document.querySelectorAll('.info-btn');
-    const modal = document.getElementById('eventModal');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalDesc = document.getElementById('modalDescription');
-    const closeBtn = document.querySelector('.close');
-  
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const event = btn.getAttribute('data-event');
-        modalTitle.textContent = event;
-        modalDesc.textContent = eventDetails[event];
-        modal.style.display = 'block';
-      });
-    });
-  
-    closeBtn.onclick = () => modal.style.display = 'none';
-    window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
-  
-    // Testimonial slider
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.testimonial');
-  
-    setInterval(() => {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === slideIndex);
-      });
-      slideIndex = (slideIndex + 1) % slides.length;
-    }, 5000);
-  </script>
+    </div>
 
-   
+    <script>
+        const eventDetails = {
+            "Vaultcon": "A global digital gathering for gamers, streamers, and developers worldwide. Includes competitions, panels, and early game demos.",
+            "Fortnite Showdown": "A stadium showdown for Fortnite fans. Battle royale teams face off in a day-long LAN event with live commentary and prizes.",
+            "Community Meetup": "Meet and greet event at Liberty Plaza. Chill, game, and vibe with the community. Merch giveaways and surprise announcements await!"
+        };
+
+        const buttons = document.querySelectorAll('.info-btn');
+        const modal = document.getElementById('eventModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDesc = document.getElementById('modalDescription');
+        const closeBtn = document.querySelector('.close');
+
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const event = btn.getAttribute('data-event');
+                modalTitle.textContent = event;
+                modalDesc.textContent = eventDetails[event];
+                modal.style.display = 'block';
+            });
+        });
+
+        closeBtn.onclick = () => modal.style.display = 'none';
+        window.onclick = e => { if (e.target === modal) modal.style.display = 'none'; };
+
+        // Testimonial slider
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.testimonial');
+
+        setInterval(() => {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === slideIndex);
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+        }, 5000);
+    </script>
+
+
 
     <!--Footer-->
     <footer>
         <!--Socil media icons-->
         <div class="social-icons">
-            <a href="https://www.instagram.com/gamestores_sa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <a
+                href="https://www.instagram.com/gamestores_sa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 <i class='bx bxl-instagram'></i>
             </a>
             <a href="https://youtu.be/swSfyAOFPeQ?si=SWypyuK7246P_ONL">
-                <i class='bx bxl-youtube' ></i>
+                <i class='bx bxl-youtube'></i>
             </a>
             <a href="https://web.facebook.com/www.gamestreet.lk/?_rdc=1&_rdr#">
-                <i class='bx bxl-facebook' ></i>
+                <i class='bx bxl-facebook'></i>
             </a>
         </div>
 
@@ -202,7 +209,7 @@
         <div class="contact-section">
             <p>Contact us</p>
             <div class="contact-info">
-                <i class="bx bxs-map"></i> 
+                <i class="bx bxs-map"></i>
                 <span>#100, Galle Road, Bambalapitiya</span>
             </div>
 
@@ -213,7 +220,7 @@
 
             <div class="contact-info">
                 <i class="bx bxs-envelope"></i>
-                <span>gamevault@gmail.com</span>  
+                <span>gamevault@gmail.com</span>
             </div>
         </div>
 
@@ -221,5 +228,16 @@
             <p> All Rights Reserved © 2024 Game vault | Designed & Developed By - universe Software Solutions</p>
         </div>
     </footer>
+
+    <!-- AOS Script Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
+
 </html>

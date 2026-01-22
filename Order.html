@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,13 @@
     <link rel="stylesheet" href="styles/Order.css">
 
     <!--Linking Boxicons-->
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -45,7 +50,7 @@
                 <a href="FAQ.html">Queries and FAQ</a>
                 <a href="Community.html">Community</a>
                 <a href="Order.html">Order Now</a>
-                
+
             </div>
             <div class="hamburger" onclick="toggleMenu()">
                 <div></div>
@@ -55,17 +60,17 @@
         </div>
     </header>
 
-    <!--Main content-->   
+    <!--Main content-->
     <main>
         <h2>Welcome to Our Store</h2>
 
         <!-- Processors section -->
-        <section id="processors">
+        <section id="processors" data-aos="fade-up">
             <h2>Processors</h2>
 
             <div class="product-grid">
-                
-                <div class="processor">
+
+                <div class="processor" data-aos="fade-up" data-aos-delay="100">
                     <img src="images/processoor 1.jpg" alt="processor 1" />
                     <div class="product-info">
                         <h4>AMD Ryzen 9 7950X</h4>
@@ -97,7 +102,8 @@
                         <h4> Intel Core i9-13900K</h4>
                         <p> LKR 215,000 </p>
                     </div>
-                    <input type="number" data-name=" Intel Core i9-13900K" data-price="215,000 " min="0" placeholder="Qty" />
+                    <input type="number" data-name=" Intel Core i9-13900K" data-price="215,000 " min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -110,7 +116,8 @@
                         <h4>Intel Core i7-13700K</h4>
                         <p>LKR 147,500</p>
                     </div>
-                    <input type="number" data-name="Intel Core i7-13700K" data-price="147,500" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Intel Core i7-13700K" data-price="147,500" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -123,7 +130,8 @@
                         <h4> Intel Core i5-13400F</h4>
                         <p>LKR 73,500</p>
                     </div>
-                    <input type="number" data-name=" Intel Core i5-13400F" data-price="73,500" min="0" placeholder="Qty" />
+                    <input type="number" data-name=" Intel Core i5-13400F" data-price="73,500" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -136,7 +144,8 @@
                         <h4>Intel Core i7-10700K</h4>
                         <p>LKR 84,500 </p>
                     </div>
-                    <input type="number" data-name="Intel Core i7-10700K" data-price="84,500 " min="0" placeholder="Qty" />
+                    <input type="number" data-name="Intel Core i7-10700K" data-price="84,500 " min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -147,18 +156,19 @@
         </section>
 
         <!-- Graphics Cards Section -->
-        <section id="graphics-cards">
+        <section id="graphics-cards" data-aos="fade-up">
             <h2>Graphic Cards</h2>
 
             <div class="product-grid">
-              
+
                 <div class="G-card">
-                    <img src="images/g-card 1.jpg" alt="Card-1"/>
+                    <img src="images/g-card 1.jpg" alt="Card-1" />
                     <div class="product-info">
                         <h4>NVIDIA GeForce RTX 4090</h4>
                         <p>LKR 659,000</p>
                     </div>
-                    <input type="number" data-name="NVIDIA GeForce RTX 4090" data-price="659,000" min="0" placeholder="Qty" />
+                    <input type="number" data-name="NVIDIA GeForce RTX 4090" data-price="659,000" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -171,7 +181,8 @@
                         <h4>NVIDIA GeForce RTX 4080 Super</h4>
                         <p>LKR 570,000</p>
                     </div>
-                    <input type="number" data-name="NVIDIA GeForce RTX 4080 Super" data-price="570,000" min="0" placeholder="Qty" />
+                    <input type="number" data-name="NVIDIA GeForce RTX 4080 Super" data-price="570,000" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -184,7 +195,8 @@
                         <h4>NVIDIA GeForce RTX 4060 Ti</h4>
                         <p>LKR 169,000</p>
                     </div>
-                    <input type="number" data-name="NVIDIA GeForce RTX 4060 Ti" data-price="169,000" min="0" placeholder="Qty" />
+                    <input type="number" data-name="NVIDIA GeForce RTX 4060 Ti" data-price="169,000" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -197,7 +209,8 @@
                         <h4>NVIDIA GeForce RTX 3060</h4>
                         <p>LKR 114,000</p>
                     </div>
-                    <input type="number" data-name="NVIDIA GeForce RTX 3060" data-price="114,000" min="0" placeholder="Qty" />
+                    <input type="number" data-name="NVIDIA GeForce RTX 3060" data-price="114,000" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -210,7 +223,8 @@
                         <h4>AMD Radeon RX 7900 XT</h4>
                         <p>LKR 449,000</p>
                     </div>
-                    <input type="number" data-name="AMD Radeon RX 7900 XT" data-price="449,000" min="0" placeholder="Qty" />
+                    <input type="number" data-name="AMD Radeon RX 7900 XT" data-price="449,000" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -234,17 +248,18 @@
         </section>
 
         <!--  Motherboards section -->
-        <section id="motherboards">
+        <section id="motherboards" data-aos="fade-up">
             <h2>Motherboards</h2>
 
             <div class="product-grid">
                 <div class="M-board">
                     <img src="images/m-board 1.png" alt="Board-1" /> <!-- ✅ Image outside -->
                     <div class="product-info">
-                        <h4>MSI PRO B760M-P DDR5</h4> 
+                        <h4>MSI PRO B760M-P DDR5</h4>
                         <p>LKR 51,000</p>
                     </div>
-                    <input type="number" data-name="MSI PRO B760M-P DDR5" data-price="51000" min="0" placeholder="Qty" />
+                    <input type="number" data-name="MSI PRO B760M-P DDR5" data-price="51000" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -257,7 +272,8 @@
                         <h4>ASUS TUF GAMING B760M-PLUS WIFI DDR5</h4>
                         <p>LKR 74,500</p>
                     </div>
-                    <input type="number" data-name="ASUS TUF GAMING B760M-PLUS WIFI DDR5" data-price="74,500" min="0" placeholder="Qty" />
+                    <input type="number" data-name="ASUS TUF GAMING B760M-PLUS WIFI DDR5" data-price="74,500" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -270,7 +286,8 @@
                         <h4>MSI MPG Z790 CARBON WIFI DDR5</h4>
                         <p>LKR 175,000</p>
                     </div>
-                    <input type="number" data-name="MSI MPG Z790 CARBON WIFI DDR5" data-price="175,000" min="0" placeholder="Qty" />
+                    <input type="number" data-name="MSI MPG Z790 CARBON WIFI DDR5" data-price="175,000" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -278,12 +295,13 @@
                 </div>
 
                 <div class="M-board">
-                    <img src="images/m-board 4.jpg" alt="Board-4"/>
+                    <img src="images/m-board 4.jpg" alt="Board-4" />
                     <div class="product-info">
                         <h4>ASUS PRIME H610M-K R2.0</h4>
                         <p>LKR 32,800</p>
                     </div>
-                    <input type="number" data-name="ASUS PRIME H610M-K R2.0" data-price="32,800" min="0" placeholder="Qty" />
+                    <input type="number" data-name="ASUS PRIME H610M-K R2.0" data-price="32,800" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -309,7 +327,8 @@
                         <h4>GIGABYTE B650M D3HP AX (Wi-Fi)</h4>
                         <p>LKR 56,500</p>
                     </div>
-                    <input type="number" data-name="GIGABYTE B650M D3HP AX (Wi-Fi)" data-price="56,500" min="0" placeholder="Qty" />
+                    <input type="number" data-name="GIGABYTE B650M D3HP AX (Wi-Fi)" data-price="56,500" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -320,7 +339,7 @@
         </section>
 
         <!--  RAM section -->
-        <section id="ram-section">
+        <section id="ram-section" data-aos="fade-up">
             <h2>Memory - RAM</h2>
 
             <div class="product-grid">
@@ -330,7 +349,8 @@
                         <h4>Kingston DDR4 8GB 3200MHz</h4>
                         <p>LKR 7,900</p>
                     </div>
-                    <input type="number" data-name="Kingston DDR4 8GB 3200MHz" data-price="7,900" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Kingston DDR4 8GB 3200MHz" data-price="7,900" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -343,7 +363,8 @@
                         <h4>Redragon 16GB DDR4 3200MHz</h4>
                         <p>LKR 14,499</p>
                     </div>
-                    <input type="number" data-name="Redragon 16GB DDR4 3200MHz" data-price="14,499" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Redragon 16GB DDR4 3200MHz" data-price="14,499" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -356,7 +377,8 @@
                         <h4>Samsung 8GB DDR4 2133MHz Laptop RAM</h4>
                         <p>LKR 13,995</p>
                     </div>
-                    <input type="number" data-name="Samsung 8GB DDR4 2133MHz Laptop RAM" data-price="13,995" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Samsung 8GB DDR4 2133MHz Laptop RAM" data-price="13,995" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -369,7 +391,8 @@
                         <h4>Corsair Vengeance LPX 32GB DDR5 5600MHz</h4>
                         <p>LKR 31,000</p>
                     </div>
-                    <input type="number" data-name="Corsair Vengeance LPX 32GB DDR5 5600MHz" data-price="31,000" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Corsair Vengeance LPX 32GB DDR5 5600MHz" data-price="31,000" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -382,7 +405,8 @@
                         <h4>Patriot Viper Venom DDR5 16GB 5600MHz</h4>
                         <p>LKR 17,500</p>
                     </div>
-                    <input type="number" data-name="Patriot Viper Venom DDR5 16GB 5600MHz" data-price="17,500" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Patriot Viper Venom DDR5 16GB 5600MHz" data-price="17,500" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -395,7 +419,8 @@
                         <h4>Patriot Signature Line DDR5 16GB 5600MHz Laptop RAM</h4>
                         <p>LKR 17,900</p>
                     </div>
-                    <input type="number" data-name="Patriot Signature Line DDR5 16GB 5600MHz Laptop RAM" data-price="17,900" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Patriot Signature Line DDR5 16GB 5600MHz Laptop RAM"
+                        data-price="17,900" min="0" placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -406,7 +431,7 @@
         </section>
 
         <!-- Storage section -->
-        <section id="storage-devices">
+        <section id="storage-devices" data-aos="fade-up">
             <h2>Storage Devices</h2>
 
             <div class="product-grid">
@@ -416,7 +441,8 @@
                         <h4>Samsung 970 EVO Plus 500GB NVMe M.2 SSD</h4>
                         <p>LKR 29,000</p>
                     </div>
-                    <input type="number" data-name="Samsung 970 EVO Plus 500GB NVMe M.2 SSD" data-price="29,000" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Samsung 970 EVO Plus 500GB NVMe M.2 SSD" data-price="29,000" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -429,7 +455,8 @@
                         <h4>Adata SU800 512GB 2.5” SATA SSD</h4>
                         <p>LKR 16,500</p>
                     </div>
-                    <input type="number" data-name="Adata SU800 512GB 2.5” SATA SSD" data-price="16,500" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Adata SU800 512GB 2.5” SATA SSD" data-price="16,500" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -442,7 +469,8 @@
                         <h4>Seagate One Touch 1TB External Hard Drive</h4>
                         <p>LKR 22,990</p>
                     </div>
-                    <input type="number" data-name="Seagate One Touch 1TB External Hard Drive" data-price="22,990" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Seagate One Touch 1TB External Hard Drive" data-price="22,990"
+                        min="0" placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -455,7 +483,8 @@
                         <h4>Kingston DataTraveler Exodia 64GB USB Flash Drive</h4>
                         <p>LKR 1,800</p>
                     </div>
-                    <input type="number" data-name="Kingston DataTraveler Exodia 64GB USB Flash Drive" data-price="1,800" min="0" placeholder="Qty" />
+                    <input type="number" data-name="Kingston DataTraveler Exodia 64GB USB Flash Drive"
+                        data-price="1,800" min="0" placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -468,7 +497,8 @@
                         <h4>ADATA UV128 64GB USB Flash Drive</h4>
                         <p>LKR 2,990</p>
                     </div>
-                    <input type="number" data-name="ADATA UV128 64GB USB Flash Drive" data-price="2,990" min="0" placeholder="Qty" />
+                    <input type="number" data-name="ADATA UV128 64GB USB Flash Drive" data-price="2,990" min="0"
+                        placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -481,7 +511,8 @@
                         <h4>SanDisk Ultra Flair 64GB USB 3.0 Flash Drive</h4>
                         <p>LKR 4,740</p>
                     </div>
-                    <input type="number" data-name="SanDisk Ultra Flair 64GB USB 3.0 Flash Drive" data-price="4,740" min="0" placeholder="Qty" />
+                    <input type="number" data-name="SanDisk Ultra Flair 64GB USB 3.0 Flash Drive" data-price="4,740"
+                        min="0" placeholder="Qty" />
                     <div class="card-buttons">
                         <button type="button" onclick="addToCart(this)">Add to Cart</button>
                         <button type="button" onclick="addToFavourites(this)">Add to Favourites</button>
@@ -498,46 +529,47 @@
         </div>
 
         <!-- Order-->
-           <section id="order-summary">
-                <h2>Order Summary</h2>
-            
-                <table>
+        <section id="order-summary" data-aos="fade-up">
+            <h2>Order Summary</h2>
+
+            <table>
                 <thead>
                     <tr>
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>Price (LKR)</th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price (LKR)</th>
                     </tr>
                 </thead>
                 <tbody id="orderTableBody"></tbody>
                 <tfoot>
                     <tr>
-                    <td colspan="2"><strong>Total</strong></td>
-                    <td id="totalPrice">0</td>
+                        <td colspan="2"><strong>Total</strong></td>
+                        <td id="totalPrice">0</td>
                     </tr>
                 </tfoot>
-                </table>
-            
-                <div class="order-buttons">
-                    <!-- Give the link an ID so we can hook into it -->
-                    <a href="Payment.html" class="button" id="buyNowBtn">Buy Now</a>
-                    <button class="button clear-btn" onclick="clearOrder()">Clear Order</button>
-                </div>
-          </section>
-  </main>
+            </table>
+
+            <div class="order-buttons">
+                <!-- Give the link an ID so we can hook into it -->
+                <a href="Payment.html" class="button" id="buyNowBtn">Buy Now</a>
+                <button class="button clear-btn" onclick="clearOrder()">Clear Order</button>
+            </div>
+        </section>
+    </main>
 
     <!--Footer-->
     <footer>
         <!--Socil media icons-->
         <div class="social-icons">
-            <a href="https://www.instagram.com/gamestores_sa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <a
+                href="https://www.instagram.com/gamestores_sa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 <i class='bx bxl-instagram'></i>
             </a>
             <a href="https://youtu.be/swSfyAOFPeQ?si=SWypyuK7246P_ONL">
-                <i class='bx bxl-youtube' ></i>
+                <i class='bx bxl-youtube'></i>
             </a>
             <a href="https://web.facebook.com/www.gamestreet.lk/?_rdc=1&_rdr#">
-                <i class='bx bxl-facebook' ></i>
+                <i class='bx bxl-facebook'></i>
             </a>
         </div>
 
@@ -551,7 +583,7 @@
         <div class="contact-section">
             <p>Contact us</p>
             <div class="contact-info">
-                <i class="bx bxs-map"></i> 
+                <i class="bx bxs-map"></i>
                 <span>#100, Galle Road, Bambalapitiya</span>
             </div>
 
@@ -562,7 +594,7 @@
 
             <div class="contact-info">
                 <i class="bx bxs-envelope"></i>
-                <span>gamevault@gmail.com</span>  
+                <span>gamevault@gmail.com</span>
             </div>
         </div>
 
@@ -570,9 +602,19 @@
             <p> All Rights Reserved © 2024 Game vault | Designed & Developed By - universe Software Solutions</p>
         </div>
     </footer>
-  
+
+    <!-- AOS Script Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
     <!--Javascript For Hamburger-->
-    <script src="script/script.js"></script>  
+    <script src="script/script.js"></script>
     <script src="script/Order.js"></script>
 </body>
+
 </html>

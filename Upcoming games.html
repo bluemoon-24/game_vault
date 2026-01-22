@@ -1,203 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>
-            Game Vault
-        </title>
-        
-        <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
-        <link rel="stylesheet" href="styles/Upcoming games.css">
 
-    <!--Linking boxicons-->
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>
+    Game Vault
+  </title>
 
-    <style>
-        
-    </style>
+  <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/Upcoming games.css">
+
+  <!--Linking boxicons-->
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+
+  </style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="Header-container">
-            <!-- Logo -->
-            <div class="logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
+  <!-- Header -->
+  <header>
+    <div class="Header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
 
-            <!-- Website name and hotmail -->
-            <div class="details">
-                <h1 class="webname">Game Vault</h1>
-                <p class="hotmail">Hotmail 0773905762 / 772305</p>
-            </div>
+      <!-- Website name and hotmail -->
+      <div class="details">
+        <h1 class="webname">Game Vault</h1>
+        <p class="hotmail">Hotmail 0773905762 / 772305</p>
+      </div>
 
-            <!-- Profile Icon -->
-            <a href="signup.html">
-                <i class="bx bx-user-circle profile-icon"></i>
-            </a>
+      <!-- Profile Icon -->
+      <a href="signup.html">
+        <i class="bx bx-user-circle profile-icon"></i>
+      </a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="About us.html">About Us</a>
+        <a href="Upcoming games.html">Upcoming Games</a>
+        <a href="Gaming products.html">Gaming Products</a>
+        <a href="Games.html">Games</a>
+        <a href="FAQ.html">Queries and FAQ</a>
+        <a href="Community.html">Community</a>
+        <a href="Order.html">Order Now</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!--Javascript For Hamburger-->
+    <script src="script/script.js"></script>
+
+  </header>
+
+  <!--Main content-->
+  <div class="upcoming-games-section">
+    <h1 class="heading1">Upcoming Games</h1>
+    <p class="main-description">
+      We unveil the most highly anticipated releases set to hit the gaming world in the coming months.
+      To reward our loyal fans, the first <strong>100 customers</strong> to pre-order any of the games listed below
+      will receive exclusive <em>in-game bonuses</em>, early access privileges, and limited-edition merchandise.
+    </p>
+
+    <div class="game-container">
+
+      <!-- Game 1 -->
+      <div class="game" data-aos="fade-up" data-aos-delay="100">
+        <div class="game-image">
+          <img src="images/Elden Ring Nightreign UG1.jpg" alt="Elden Ring Nightreign">
+          <div class="overlay-text">Release Date: March 18, 2025</div>
+          <span class="badge">PRE-ORDER</span>
         </div>
-
-        <!-- Navigation Bar -->
-        <div class="navbar">
-            <div class="nav-links" id="navLinks">
-                <a href="index.html">Home</a>
-                <a href="About us.html">About Us</a>
-                <a href="Upcoming games.html">Upcoming Games</a>
-                <a href="Gaming products.html">Gaming Products</a>
-                <a href="Games.html">Games</a>
-                <a href="FAQ.html">Queries and FAQ</a>
-                <a href="Community.html">Community</a>
-                <a href="Order.html">Order Now</a>
-            </div>
-            <div class="hamburger" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-
-        <!--Javascript For Hamburger-->
-        <script src="script/script.js"></script>
-
-    </header>
-
-    <!--Main content-->
-    <div class="upcoming-games-section">
-        <h1 class="heading1">Upcoming Games</h1>
-        <p class="main-description">
-          We unveil the most highly anticipated releases set to hit the gaming world in the coming months.
-          To reward our loyal fans, the first <strong>100 customers</strong> to pre-order any of the games listed below 
-          will receive exclusive <em>in-game bonuses</em>, early access privileges, and limited-edition merchandise.
-        </p>
-      
-        <div class="game-container">
-      
-          <!-- Game 1 -->
-          <div class="game">
-            <div class="game-image">
-              <img src="images/Elden Ring Nightreign UG1.jpg" alt="Elden Ring Nightreign">
-              <div class="overlay-text">Release Date: March 18, 2025</div>
-              <span class="badge">PRE-ORDER</span>
-            </div>
-            <div class="game-content">
-              <h2>Elden Ring: Nightreign</h2>
-              <p>Step into Evernight, a cursed realm of darkness. New bosses, dynamic weather, and deeper lore await in this thrilling expansion.</p>
-            </div>
-          </div>
-      
-          <!-- Game 2 -->
-          <div class="game">
-            <div class="game-image">
-              <img src="images/Assassin's Creed Shadows UG3.jpeg" alt="Assassin's Creed Shadows">
-              <div class="overlay-text">Release Date: April 25, 2025</div>
-              <span class="badge">PRE-ORDER</span>
-            </div>
-            <div class="game-content">
-              <h2>Assassin's Creed: Shadows</h2>
-              <p>Venture into the shadows of Victorian London. Use stealth, decision-based storylines, and hidden blades to reclaim justice.</p>
-            </div>
-          </div>
-      
-          <!-- Game 3 -->
-          <div class="game">
-            <div class="game-image">
-              <img src="images/Kingdom Come Deliverance 2 UG2.avif" alt="Kingdom Come 2">
-              <div class="overlay-text">Release Date: June 15, 2025</div>
-              <span class="badge">PRE-ORDER</span>
-            </div>
-            <div class="game-content">
-              <h2>Kingdom Come: Deliverance 2</h2>
-              <p>Return to medieval Bohemia. Experience realistic combat, intense quests, and story-altering decisions.</p>
-            </div>
-          </div>
-      
-          <!-- Game 4 -->
-          <div class="game">
-            <div class="game-image">
-              <img src="images/Marvel 1943  Rise of Hydra UG4.jpg" alt="Marvel 1943">
-              <div class="overlay-text">Release Date: September 12, 2025</div>
-              <span class="badge">PRE-ORDER</span>
-            </div>
-            <div class="game-content">
-              <h2>Marvel 1943: Rise of Hydra</h2>
-              <p>Join WWII heroes against Hydra. Switch between characters, complete stealth missions, and unravel alternate Marvel history.</p>
-            </div>
-          </div>
-      
-          <!-- Game 5 -->
-          <div class="game">
-            <div class="game-image">
-              <img src="images/Doom The Dark Ages UG5.jpg" alt="Doom The Dark Ages">
-              <div class="overlay-text">Release Date: August 15, 2025</div>
-              <span class="badge">PRE-ORDER</span>
-            </div>
-            <div class="game-content">
-              <h2>Doom: The Dark Ages</h2>
-              <p>Slay demonic beasts in a medieval setting using swords, crossbows, and alchemical powers in this gothic spin on the Doom universe.</p>
-            </div>
-          </div>
-      
-          <!-- Game 6 -->
-          <div class="game">
-            <div class="game-image">
-              <img src="images/avowed UG6.jpg" alt="Avowed">
-              <div class="overlay-text">Release Date: November 14, 2025</div>
-              <span class="badge">PRE-ORDER</span>
-            </div>
-            <div class="game-content">
-              <h2>Avowed</h2>
-              <p>Enter Eora as a Vailian adventurer. Cast powerful spells, explore ancient ruins, and determine the fate of magical realms.</p>
-            </div>
-          </div>
-      
+        <div class="game-content">
+          <h2>Elden Ring: Nightreign</h2>
+          <p>Step into Evernight, a cursed realm of darkness. New bosses, dynamic weather, and deeper lore await in this
+            thrilling expansion.</p>
         </div>
       </div>
-    
 
-    <!--Footer-->
-    <footer>
-         <!--Socil media icons-->
-         <div class="social-icons">
-            <a href="https://www.instagram.com/gamestores_sa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                <i class='bx bxl-instagram'></i>
-            </a>
-            <a href="https://youtu.be/swSfyAOFPeQ?si=SWypyuK7246P_ONL">
-                <i class='bx bxl-youtube' ></i>
-            </a>
-            <a href="https://web.facebook.com/www.gamestreet.lk/?_rdc=1&_rdr#">
-                <i class='bx bxl-facebook' ></i>
-            </a>
+      <!-- Game 2 -->
+      <div class="game" data-aos="fade-up" data-aos-delay="200">
+        <div class="game-image">
+          <img src="images/Assassin's Creed Shadows UG3.jpeg" alt="Assassin's Creed Shadows">
+          <div class="overlay-text">Release Date: April 25, 2025</div>
+          <span class="badge">PRE-ORDER</span>
         </div>
-
-        <!--Logo and name-->
-        <div class="logo-footer">
-            <img src="images/logo.png" alt="footer-logo" class="footer-logo">
-            <h1>Game Vault</h1>
+        <div class="game-content">
+          <h2>Assassin's Creed: Shadows</h2>
+          <p>Venture into the shadows of Victorian London. Use stealth, decision-based storylines, and hidden blades to
+            reclaim justice.</p>
         </div>
+      </div>
 
-        <!--Contact section-->
-        <div class="contact-section">
-            <p>Contact us</p>
-            <div class="contact-info">
-                <i class="bx bxs-map"></i> 
-                <span>#100, Galle Road, Bambalapitiya</span>
-            </div>
-
-            <div class="contact-info">
-                <i class="bx bxs-phone"></i>
-                <span>+94 77 261 3 062 | +94 77 261 3 063</span>
-            </div>
-
-            <div class="contact-info">
-                <i class="bx bxs-envelope"></i>
-                <span>gamevault@gmail.com</span>  
-            </div>
+      <!-- Game 3 -->
+      <div class="game" data-aos="fade-up" data-aos-delay="300">
+        <div class="game-image">
+          <img src="images/Kingdom Come Deliverance 2 UG2.avif" alt="Kingdom Come 2">
+          <div class="overlay-text">Release Date: June 15, 2025</div>
+          <span class="badge">PRE-ORDER</span>
         </div>
-
-        <div class="footer-message">
-            <p> All Rights Reserved © 2024 Game vault | Designed & Developed By - universe Software Solutions</p>
+        <div class="game-content">
+          <h2>Kingdom Come: Deliverance 2</h2>
+          <p>Return to medieval Bohemia. Experience realistic combat, intense quests, and story-altering decisions.</p>
         </div>
-    </footer>
+      </div>
+
+      <!-- Game 4 -->
+      <div class="game" data-aos="fade-up" data-aos-delay="100">
+        <div class="game-image">
+          <img src="images/Marvel 1943  Rise of Hydra UG4.jpg" alt="Marvel 1943">
+          <div class="overlay-text">Release Date: September 12, 2025</div>
+          <span class="badge">PRE-ORDER</span>
+        </div>
+        <div class="game-content">
+          <h2>Marvel 1943: Rise of Hydra</h2>
+          <p>Join WWII heroes against Hydra. Switch between characters, complete stealth missions, and unravel alternate
+            Marvel history.</p>
+        </div>
+      </div>
+
+      <!-- Game 5 -->
+      <div class="game" data-aos="fade-up" data-aos-delay="200">
+        <div class="game-image">
+          <img src="images/Doom The Dark Ages UG5.jpg" alt="Doom The Dark Ages">
+          <div class="overlay-text">Release Date: August 15, 2025</div>
+          <span class="badge">PRE-ORDER</span>
+        </div>
+        <div class="game-content">
+          <h2>Doom: The Dark Ages</h2>
+          <p>Slay demonic beasts in a medieval setting using swords, crossbows, and alchemical powers in this gothic
+            spin on the Doom universe.</p>
+        </div>
+      </div>
+
+      <!-- Game 6 -->
+      <div class="game" data-aos="fade-up" data-aos-delay="300">
+        <div class="game-image">
+          <img src="images/avowed UG6.jpg" alt="Avowed">
+          <div class="overlay-text">Release Date: November 14, 2025</div>
+          <span class="badge">PRE-ORDER</span>
+        </div>
+        <div class="game-content">
+          <h2>Avowed</h2>
+          <p>Enter Eora as a Vailian adventurer. Cast powerful spells, explore ancient ruins, and determine the fate of
+            magical realms.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--Footer-->
+  <footer>
+    <!--Socil media icons-->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/gamestores_sa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+        <i class='bx bxl-instagram'></i>
+      </a>
+      <a href="https://youtu.be/swSfyAOFPeQ?si=SWypyuK7246P_ONL">
+        <i class='bx bxl-youtube'></i>
+      </a>
+      <a href="https://web.facebook.com/www.gamestreet.lk/?_rdc=1&_rdr#">
+        <i class='bx bxl-facebook'></i>
+      </a>
+    </div>
+
+    <!--Logo and name-->
+    <div class="logo-footer">
+      <img src="images/logo.png" alt="footer-logo" class="footer-logo">
+      <h1>Game Vault</h1>
+    </div>
+
+    <!--Contact section-->
+    <div class="contact-section">
+      <p>Contact us</p>
+      <div class="contact-info">
+        <i class="bx bxs-map"></i>
+        <span>#100, Galle Road, Bambalapitiya</span>
+      </div>
+
+      <div class="contact-info">
+        <i class="bx bxs-phone"></i>
+        <span>+94 77 261 3 062 | +94 77 261 3 063</span>
+      </div>
+
+      <div class="contact-info">
+        <i class="bx bxs-envelope"></i>
+        <span>gamevault@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="footer-message">
+      <p> All Rights Reserved © 2024 Game vault | Designed & Developed By - universe Software Solutions</p>
+    </div>
+  </footer>
+
+  <!-- AOS Script Initialization -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
+
 </html>

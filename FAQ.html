@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>
-            Game Vault
-        </title>
-        
-        <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
-        <link rel="stylesheet" href="styles/FAQ.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+        Game Vault
+    </title>
+
+    <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/FAQ.css">
 
     <!--Linking boxicons-->
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' >
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 
     <style>
-        
+
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -65,44 +67,45 @@
     <!-- Main contents -->
     <!--Contact us page-->
     <div class="form-section-main">
-        <div class="contact-form">
+        <div class="contact-form" data-aos="zoom-in">
             <h1>Contact us</h1>
             <div class="txtb">
                 <label>Full Name</label>
                 <input type="text" name="" value="" placeholder="Enter your Name">
             </div>
-        
+
             <div class="txtb">
                 <label>Email</label>
                 <input type="email" name="" value="" placeholder="Enter your Email">
             </div>
-        
+
             <div class="txtb">
                 <label>Phone Number</label>
                 <input type="text" name="" value="" placeholder="Enter your phone Number ">
             </div>
-        
+
             <div class="txtb">
                 <label>Message</label>
-                <textarea></textarea>
+                <textarea placeholder="How can we help you?"></textarea>
             </div>
-            <a class="btn" id="sendMessage">Send</a>
+            <button class="btn" id="sendMessage">Send Message</button>
         </div>
     </div>
 
 
     <!--Footer-->
     <footer>
-         <!--Socil media icons-->
-         <div class="social-icons">
-            <a href="https://www.instagram.com/gamestores_sa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+        <!--Socil media icons-->
+        <div class="social-icons">
+            <a
+                href="https://www.instagram.com/gamestores_sa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 <i class='bx bxl-instagram'></i>
             </a>
             <a href="https://youtu.be/swSfyAOFPeQ?si=SWypyuK7246P_ONL">
-                <i class='bx bxl-youtube' ></i>
+                <i class='bx bxl-youtube'></i>
             </a>
             <a href="https://web.facebook.com/www.gamestreet.lk/?_rdc=1&_rdr#">
-                <i class='bx bxl-facebook' ></i>
+                <i class='bx bxl-facebook'></i>
             </a>
         </div>
 
@@ -116,7 +119,7 @@
         <div class="contact-section">
             <p>Contact us</p>
             <div class="contact-info">
-                <i class="bx bxs-map"></i> 
+                <i class="bx bxs-map"></i>
                 <span>#100, Galle Road, Bambalapitiya</span>
             </div>
 
@@ -127,7 +130,7 @@
 
             <div class="contact-info">
                 <i class="bx bxs-envelope"></i>
-                <span>gamevault@gmail.com</span>  
+                <span>gamevault@gmail.com</span>
             </div>
         </div>
 
@@ -135,5 +138,16 @@
             <p> All Rights Reserved © 2024 Game vault | Designed & Developed By - universe Software Solutions</p>
         </div>
     </footer>
+
+    <!-- AOS Script Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
+
 </html>
