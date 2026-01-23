@@ -334,6 +334,15 @@ input[type="number"]:focus {
   .button-section button {
     width: 90%;
   }
+
+  #order-summary {
+    padding: 20px;
+    overflow-x: auto;
+  }
+
+  #order-summary table {
+    min-width: 500px;
+  }
 }
 
 /* Tablet View */

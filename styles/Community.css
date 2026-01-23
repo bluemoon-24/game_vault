@@ -251,9 +251,61 @@
     font-size: 2rem;
   }
 
-  .table-section table {
-    width: 100%;
-    font-size: 0.9rem;
+  /* Table Responsiveness: Stack columns into cards */
+  .table-section {
+    overflow-x: hidden;
+  }
+
+  .table-section table,
+  .table-section thead,
+  .table-section tbody,
+  .table-section th,
+  .table-section td,
+  .table-section tr {
+    display: block;
+  }
+
+  .table-section thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table-section tr {
+    border: 1px solid var(--surface-border);
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 15px;
+    transition: var(--transition);
+  }
+
+  .table-section td {
+    border: none;
+    position: relative;
+    padding: 15px 15px 15px 45%;
+    text-align: right;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .table-section td:last-child {
+    border-bottom: none;
+  }
+
+  .table-section td::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 40%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    color: var(--primary);
+    text-transform: uppercase;
   }
 
   .benefits h1,
@@ -266,7 +318,8 @@
   }
 
   .modal-content {
-    width: 90%;
+    width: 95%;
+    padding: 30px;
   }
 }
 
